@@ -13,6 +13,9 @@ data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.s
 data <- na.omit(data)
 data <- filter(data, Date %in% c("1/2/2007", "2/2/2007"))
 
+##Change the window size - this makes the graph look better
+windows(width=5, height=6)
+
 ##Set the background - it is transparent on the example file
 par(bg = "transparent")
 
