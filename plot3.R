@@ -22,7 +22,7 @@ par(bg = "transparent")
 ##Change the window size - otherwise the legend gets cut off in the PNG
 windows(width=6, height=5)
 
-##Generate the histogram plot
+##Generate the line plot with multiple layers and a legend
 plot(data3$Date, data3$Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = "")
 lines(data3$Date, data3$Sub_metering_1)
 lines(data3$Date, data3$Sub_metering_2, col = "red")
